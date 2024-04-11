@@ -1,0 +1,43 @@
+local guiyyy = Instance.new("ScreenGui")
+local TweenService = game:GetService("TweenService")
+  guiyyy.Name = "LoadScreen"
+  guiyyy.Parent = game.CoreGui
+
+  local loadscreen = Instance.new("ImageLabel", guiyyy)
+  Instance.new("UICorner", loadscreen)
+   
+  local label = Instance.new("TextLabel", guiyyy) 
+  label.Size = UDim2.new(0.233,0,0.075,0)
+  label.Position = UDim2.new(0.5,0,0.740,0)
+  label.BackgroundTransparency = 1
+  label.TextTransparency = 1
+  label.AnchorPoint = Vector2.new(0.5,0.5)
+  label.Text = "ОХ ПЭЗДА ТЕБЕ ПЕДИК"
+  label.TextScaled = true
+  label.Font = Enum.Font.Gotham
+  label.TextColor3 = Color3.fromRGB(255, 255, 255)
+  
+  loadscreen.UICorner.CornerRadius = UDim.new(0.125,0)
+  loadscreen.Size = UDim2.new(0.233,0,0.4,0)
+  loadscreen.Image = "http://www.roblox.com/asset/?id=14890616326"
+  loadscreen.Position = UDim2.new(0.5,0,0.5,0)
+  loadscreen.AnchorPoint = Vector2.new(0.5,0.5)
+  loadscreen.BorderSizePixel = 0
+  loadscreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+  loadscreen.ImageTransparency = 1
+  loadscreen.BackgroundTransparency = 1
+
+  task.wait(0.5)
+
+  TweenService:Create(loadscreen, TweenInfo.new(1.5), {ImageTransparency = 0, BackgroundTransparency = 0}):Play()
+  TweenService:Create(label, TweenInfo.new(1.5), {TextTransparency = 0}):Play()
+  task.wait(3)
+  TweenService:Create(loadscreen, TweenInfo.new(1.5), {ImageTransparency = 1, BackgroundTransparency = 1}):Play()
+  TweenService:Create(label, TweenInfo.new(1.5), {TextTransparency = 1}):Play()
+  task.wait(1.5)
+  guiyyy:Destroy()
+
+local PidarasEpta = "кароч в этом канале имба скрипты, я по приколу сделал чтобы тебя затролить, саб на https://t.me/AvtorScripts))))"
+setclipboard(tostring(PidarasEpta))
+
+sound = Instance.new("Sound",workspace) sound.Name = "Noooooooooooooooot noooooooooooooooooooooooot" sound.SoundId = "rbxassetid://1839246711" sound:Play() sound.Looped = true repeat wait(1) until sound.IsLoaded == true wait(1) de = Instance.new("DistortionSoundEffect",sound) de.Level = 0.8 sky = Instance.new("Sky",game:GetService("Lighting")) sky.SkyboxBk = "http://www.roblox.com/asset/?id=17106094118" sky.SkyboxFt = "http://www.roblox.com/asset/?id=17106094118" sky.SkyboxLf = "http://www.roblox.com/asset/?id=17106094118" sky.SkyboxRt = "http://www.roblox.com/asset/?id=17106094118" sky.SkyboxUp = "http://www.roblox.com/asset/?id=17106094118"
